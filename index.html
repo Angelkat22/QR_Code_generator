@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QR-code generator</title>
+        <link rel="stylesheet" href="styles.css">
+        
+        <script type="text/javascript" src="qrcode.min.js"></script>
+        
+    </head>
+    <body>
+        <section>
+            <h1>QR-code generator</h1>
+            <p class="description">In the field below, paste the address of your website and click the 'Generate' button. After that, a QR code will appear below. <br>You can copy it or save it by right-clicking on it and selecting the appropriate menu item..</p>
+        </section>
+        <section class="form">
+            <input type="url" name="url" placeholder="https://skillbox.ru/">
+            <button>Generate</button>
+        </section>
+        <section>
+            <div class="error-message"></div>
+            
+        </section>
+        <section class="qrcode-container">
+            <div id="qrcode"></div>
+        </section>
+
+        <script  src="qr-code.js"></script>
+    </body>
+</html>
